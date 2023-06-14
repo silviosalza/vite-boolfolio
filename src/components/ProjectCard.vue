@@ -20,6 +20,9 @@ export default{
         <div class="card text-center">
             <h4>{{ project.title }}</h4>
             <p>{{ contentPreview }}</p>
+            <h5 v-if="project.type">{{ project.type.name }}</h5>
+            <span v-else>Nessuna tipologia</span>
+            <h6 v-for="element in project.technologies">{{ element.name }}</h6>
         </div>
 </template>
 

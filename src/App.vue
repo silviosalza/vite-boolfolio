@@ -49,6 +49,8 @@ export default{
         <ProjectCard :project="element" />
       </div>
     </div>
+
+    <!-- carosello per impaginazione -->
   <nav v-if="lastPage" aria-label="Page navigation example" class="d-flex justify-content-center">
     <ul class="pagination">
       <li class="page-item" :class="{'disabled': currentPage === 1}"><a @click.prevent="getProjects(currentPage - 1)" class="page-link" href="#">Previous</a></li>
