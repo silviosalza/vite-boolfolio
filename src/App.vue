@@ -17,8 +17,6 @@ export default{
   <!-- <ProjectsList/> -->
   <router-view></router-view>
 
-  <AppAbout/>
-
 
 </template>
 
